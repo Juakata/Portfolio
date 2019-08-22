@@ -1,0 +1,46 @@
+body{
+  background-image: URL("https://backgrounddownload.com/wp-content/uploads/2018/09/new-full-hd-background-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.nav-container{
+  max-width: 1300px;
+  background-color: rgba(0, 74, 9, .5);
+  box-shadow: 0 1px 2px #004a09;
+  margin: 0 auto;
+}
+
+.nav-container ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  display: inline-block;
+  padding: 10px 0;
+}
+.ul-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.li-header{
+  display: inline;
+}
+.ul-container li a:hover{
+  color: #00ff1f;
+  border-bottom: 5px solid #00ff1f;
+  padding-bottom: 5px;
+  transition-duration: .3s;
+}
+.main-container{
+  max-width: 1300px;
+  background-color: rgba(0, 74, 9, .5);
+  margin: 0 auto;
+}
