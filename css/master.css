@@ -1,11 +1,11 @@
 body{
   background-image: URL("https://backgrounddownload.com/wp-content/uploads/2018/09/new-full-hd-background-4.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 .nav-container{
   max-width: 1300px;
-  background-color: rgba(0, 74, 9, .5);
+  background-color: rgba(0, 74, 9, .7);
   box-shadow: 0 1px 2px #004a09;
   margin: 0 auto;
 }
@@ -120,6 +120,60 @@ body{
 }
 .ul-container-show li:hover a{
   color: rgba(8, 46, 16, .7);
+}
+.projects-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 15px;
+}
+.project-container{
+  position: relative;
+  border-radius: 10px;
+  height: 25vw;
+  margin: 20px 20px;
+  box-shadow: 1px 1px 15px black;
+  transition: transform 1s;
+}
+.project-container:hover{
+  z-index: 1;
+}
+.pro-back-1{
+  background-image: url("../images/project1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pro-back-2{
+  background-image: url("../images/project2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.target-all{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom,transparent ,#002b16);
+}
+.target-all:hover{
+  background: linear-gradient(to bottom,transparent 40%,#002b16);
+}
+.project-title{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  text-shadow: 1px 1px 1px black;
+  z-index: 1;
+}
+@media(max-width:850px){
+  .projects-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .project-container{
+    height: 60vw;
+  }
 }
 @media(max-width:650px){
   .collapse{
