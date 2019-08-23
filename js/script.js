@@ -4,6 +4,17 @@ var andoni = document.getElementById("andoni");
 var projects = document.getElementById("projects");
 var contact = document.getElementById("contact");
 
+window.onresize = function(){
+  if(document.body.clientWidth > 650 && menuContainer.style.height > "0px"){
+    menuContainer.style.transitionDuration = "0";
+    menuContainer.style.height = "0";
+    menuContainer.style.fontSize = "0";
+    andoni.style.marginTop = "0";
+    projects.style.marginTop = "0";
+    contact.style.marginTop = "0";
+    menuIcon.className = "fa fa-bars";
+  }
+}
 menuIcon.onclick = function(){
   if(menuContainer.style.height > "0px"){
     menuContainer.style.height = "0";
