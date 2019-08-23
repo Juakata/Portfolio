@@ -96,22 +96,30 @@ body{
   height: 0;
   background: rgba(8, 46, 16, .7);
   display: flex;
-  flex-direction: column;
   text-align: center;
-  justify-content: space-around;
+  flex-flow: column;
   transition: height 1s;
   font-size: 0;
 }
-
+.ul-container-show li{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
 .ul-container-show li a{
   text-decoration: none;
   color: white;
   text-shadow: 1px 1px 1px black;
   transition: font-size 1s;
+  display: block;
+  margin-top: 0;
 }
-.ul-container-show li a:hover{
-  color: #00ff1f;
-  border-bottom: 3px solid #00ff1f;
+.ul-container-show li:hover{
+  background: rgba(255,255,255,.7);
+}
+.ul-container-show li:hover a{
+  color: rgba(8, 46, 16, .7);
 }
 @media(max-width:650px){
   .collapse{
