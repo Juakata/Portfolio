@@ -5,14 +5,18 @@
     <title>Andoni Uzquiano</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
       <nav class="nav-container">
-          <ul class="ul-container">
-            <li><a href="#">Andoni Uzquiano</a></u>
-            <li class="li-header"><a href="#">Projects</a></u>
-            <li class="li-header"><a href="#">Contact</a></u>
+          <ul class="ul-container collapse">
+            <li class=""><a href="#">Andoni Uzquiano</a></li>
+            <li class="li-header"><a href="#">Projects</a></li>
+            <li class="li-header"><a href="#">Contact</a></li>
+          </ul>
+          <ul class="ul-container show">
+            <li ><i class="fa fa-bars" id="i-menu"></i></li>
           </ul>
       </nav>
     </header>
@@ -22,8 +26,24 @@
         <p class="text">I am a student at Microver. My passion is building simple, beautiful user experiences.
           Always doing my best in all my projects.</p>
       </section>
+
       <div class="window">
+        <div class="window-menu">
+          <i class="fa fa-times-circle i-exit"></i>
+          <i class="fa fa-minus-square"></i>
+          <i class="fa fa-window-maximize"></i>
+        </div>
+        <p class="text-code-g">
+          <span class="text-code-s">andoni@currentLocation:～$ </span>
+          El Salvador, Sansalvador</p>
+        <p class="text-code-g">
+          <span class="text-code-s">andoni@contactInfo:～$ </span>
+          juakata07@gmail.com</p>
+        <p class="text-code-g">
+          <span class="text-code-s">andoni@interests:～$ </span>
+          cooking</p>
       </div>
+      <script src="js/script.js" type="text/javascript"></script>
     </main>
   </body>
 </html>

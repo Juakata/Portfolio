@@ -1,12 +1,7 @@
 body{
   background-image: URL("https://backgrounddownload.com/wp-content/uploads/2018/09/new-full-hd-background-4.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-}
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  background-size: auto;
 }
 .nav-container{
   max-width: 1300px;
@@ -43,6 +38,7 @@ body{
   max-width: 1300px;
   background-color: rgba(0, 74, 9, .5);
   margin: 0 auto;
+  padding: 20px;
 }
 
 .about-section{
@@ -58,4 +54,63 @@ body{
 .text{
   font-size: 30px;
   color: white;
+}
+.window{
+  background: rgba(82, 38, 0, .9);
+  margin: 20px;
+  padding-bottom: 25px;
+  box-shadow: 2px 2px 15px black;
+  border-radius: 10px;
+  transition: transform .5s;
+  transform-origin: center;
+}
+.window:hover{
+  transform: scale(1.05);
+}
+.window-menu{
+  background: linear-gradient(to bottom,grey ,#303030);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #a3a3a3;
+  text-shadow: 0 -1px 1px black;
+}
+.text-code-g{
+  color: white;
+  font-size: 22px;
+  margin: 25px 40px;
+}
+.text-code-s{
+  color: #00ff1f;
+}
+.i-exit{
+  color: #ff5e00;
+}
+.show{
+  display: none;
+}
+
+@media(max-width:650px){
+  .collapse{
+    display: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    text-align: right;
+    text-shadow: 0 1px 1px black;
+    transition: transform .5s;
+  }
+  .show i:hover{
+    color: #00ff1f;
+    transform: scale(1.1);
+  }
+  .show i:active{
+    transform: scale(0.9);
+    text-shadow: 1px 1px 5px black;
+  }
 }
