@@ -135,3 +135,15 @@ body{
     text-shadow: 1px 1px 5px black;
   }
 }
+
+@media(max-width:500px){
+  .title{
+    font-size: 12vw;
+  }
+  .text{
+    font-size: 6vw;
+  }
+  .text-code-g{
+    font-size: 4.4vw;
+  }
+}
