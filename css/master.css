@@ -128,7 +128,7 @@ body{
 }
 .project-container{
   position: relative;
-  border-radius: 10px;
+  border-radius: 20px;
   height: 25vw;
   margin: 20px 20px;
   box-shadow: 1px 1px 15px black;
@@ -144,6 +144,16 @@ body{
 }
 .pro-back-2{
   background-image: url("../images/project2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pro-back-3{
+  background-image: url("https://user-images.githubusercontent.com/11781597/63105959-0e94fa00-bf3f-11e9-9c03-c2af78ebb4ac.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pro-back-4{
+  background-image: url("../images/project4.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -206,6 +216,9 @@ body{
     font-size: 6vw;
   }
   .text-code-g{
-    font-size: 4.4vw;
+    font-size: 4vw;
+  }
+  .project-title{
+    font-size: 5vw;
   }
 }

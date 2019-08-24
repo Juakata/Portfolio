@@ -4,27 +4,74 @@ var andoni = document.getElementById("andoni");
 var projects = document.getElementById("projects");
 var contact = document.getElementById("contact");
 var project1 = document.getElementById("project-1");
+var project2 = document.getElementById("project-2");
+var project3 = document.getElementById("project-3");
+var project4 = document.getElementById("project-4");
 
 project1.onmousemove = function() {
   var offset = $(this).offset();
-  projectMove(offset);
-}
-
-function projectMove(offset){
   x = event.pageX;
   y = event.pageY;
   if(x<(514)){
-    project1.style.transform = "perspective(1000px) rotateY("+(15-x*0.01)+"deg) scale(1.1)";
+    project1.style.transform = "perspective(1000px) rotateY(10deg) scale(1.1)";
     project1.style.boxShadow = "0px 0px 15px black";
   }else {
-    project1.style.transform = "perspective(1000px) rotateY(-"+x*0.02+"deg) scale(1.1)";
+    project1.style.transform = "perspective(1000px) rotateY(-10deg) scale(1.1)";
     project1.style.boxShadow = "0px 0px 15px black";
+  }
+}
+project2.onmousemove = function() {
+  var offset = $(this).offset();
+  x = event.pageX;
+  y = event.pageY;
+  if(x<(1150)){
+    project2.style.transform = "perspective(1000px) rotateY(10deg) scale(1.1)";
+    project2.style.boxShadow = "0px 0px 15px black";
+  }else {
+    project2.style.transform = "perspective(1000px) rotateY(-10deg) scale(1.1)";
+    project2.style.boxShadow = "0px 0px 15px black";
+  }
+}
+project3.onmousemove = function() {
+  var offset = $(this).offset();
+  x = event.pageX;
+  y = event.pageY;
+  if(x<(514)){
+    project3.style.transform = "perspective(1000px) rotateY(10deg) scale(1.1)";
+    project3.style.boxShadow = "0px 0px 15px black";
+  }else {
+    project3.style.transform = "perspective(1000px) rotateY(-10deg) scale(1.1)";
+    project3.style.boxShadow = "0px 0px 15px black";
+  }
+}
+project4.onmousemove = function() {
+  var offset = $(this).offset();
+  x = event.pageX;
+  y = event.pageY;
+  if(x<(1150)){
+    project4.style.transform = "perspective(1000px) rotateY(10deg) scale(1.1)";
+    project4.style.boxShadow = "0px 0px 15px black";
+  }else {
+    project4.style.transform = "perspective(1000px) rotateY(-10deg) scale(1.1)";
+    project4.style.boxShadow = "0px 0px 15px black";
   }
 }
 
 project1.onmouseout = function(){
   project1.style.transform = "rotate(0) scale(1)";
   project1.style.boxShadow = "1px 1px 15px black";
+}
+project2.onmouseout = function(){
+  project2.style.transform = "rotate(0) scale(1)";
+  project2.style.boxShadow = "1px 1px 15px black";
+}
+project3.onmouseout = function(){
+  project3.style.transform = "rotate(0) scale(1)";
+  project3.style.boxShadow = "1px 1px 15px black";
+}
+project4.onmouseout = function(){
+  project4.style.transform = "rotate(0) scale(1)";
+  project4.style.boxShadow = "1px 1px 15px black";
 }
 window.onresize = function(){
   if(document.body.clientWidth > 650 && menuContainer.style.height > "0px"){
