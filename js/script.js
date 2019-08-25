@@ -10,9 +10,11 @@ var project4 = document.getElementById("project-4");
 
 project1.onmousemove = function() {
   var offset = $(this).offset();
-  x = event.pageX;
+  x = event.pageX - offset.left;
   y = event.pageY;
-  if(x<(514)){
+  width = window.getComputedStyle(project1).width;
+
+  if(x<(parseInt(width)/2)){
     project1.style.transform = "perspective(1000px) rotateY(10deg) scale(1.1)";
     project1.style.boxShadow = "0px 0px 15px black";
   }else {
@@ -22,9 +24,11 @@ project1.onmousemove = function() {
 }
 project2.onmousemove = function() {
   var offset = $(this).offset();
-  x = event.pageX;
+  x = event.pageX - offset.left;
   y = event.pageY;
-  if(x<(1150)){
+  width = window.getComputedStyle(project1).width;
+
+  if(x<(parseInt(width)/2)){
     project2.style.transform = "perspective(1000px) rotateY(10deg) scale(1.1)";
     project2.style.boxShadow = "0px 0px 15px black";
   }else {
@@ -34,9 +38,11 @@ project2.onmousemove = function() {
 }
 project3.onmousemove = function() {
   var offset = $(this).offset();
-  x = event.pageX;
+  x = event.pageX - offset.left;
   y = event.pageY;
-  if(x<(514)){
+  width = window.getComputedStyle(project1).width;
+
+  if(x<(parseInt(width)/2)){
     project3.style.transform = "perspective(1000px) rotateY(10deg) scale(1.1)";
     project3.style.boxShadow = "0px 0px 15px black";
   }else {
@@ -46,9 +52,11 @@ project3.onmousemove = function() {
 }
 project4.onmousemove = function() {
   var offset = $(this).offset();
-  x = event.pageX;
+  x = event.pageX - offset.left;
   y = event.pageY;
-  if(x<(1150)){
+  width = window.getComputedStyle(project1).width;
+
+  if(x<(parseInt(width)/2)){
     project4.style.transform = "perspective(1000px) rotateY(10deg) scale(1.1)";
     project4.style.boxShadow = "0px 0px 15px black";
   }else {
