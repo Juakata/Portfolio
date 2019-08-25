@@ -104,9 +104,9 @@ menuIcon.onclick = function(){
   }else{
     menuContainer.style.height = "140px";
     menuContainer.style.fontSize = "25px";
-    andoni.style.marginTop = "2%";
-    projects.style.marginTop = "2%";
-    contact.style.marginTop = "2%";
+    andoni.style.marginTop = "2.5%";
+    projects.style.marginTop = "2.5%";
+    contact.style.marginTop = "2.5%";
     menuIcon.className = "fa fa-times";
   }
 }
