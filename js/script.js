@@ -72,6 +72,7 @@ project3.onmouseout = function(){
 project4.onmouseout = function(){
   project4.style.transform = "rotate(0) scale(1)";
   project4.style.boxShadow = "1px 1px 15px black";
+  log.console("ioasd");
 }
 window.onresize = function(){
   if(document.body.clientWidth > 650 && menuContainer.style.height > "0px"){
