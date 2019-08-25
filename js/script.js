@@ -8,7 +8,7 @@ var project2 = document.getElementById("project-2");
 var project3 = document.getElementById("project-3");
 var project4 = document.getElementById("project-4");
 
-project1.onmousemove = function() {
+project1.onmousemove = function(name) {
   var offset = $(this).offset();
   x = event.pageX - offset.left;
   y = event.pageY;
@@ -108,5 +108,6 @@ menuIcon.onclick = function(){
     projects.style.marginTop = "2.5%";
     contact.style.marginTop = "2.5%";
     menuIcon.className = "fa fa-times";
+
   }
 }
