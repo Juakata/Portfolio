@@ -10,8 +10,8 @@ var project4 = document.getElementById("project-4");
 
 project1.ontouchmove = function() {
   var offset = $(this).offset();
-  x = e.touches[0].clientX;
-  y = e.touches[0].clientY;
+  x = offset.touches[0].clientX;
+  y = offset.touches[0].clientY;
   width = window.getComputedStyle(project1).width;
 
   if(x<(parseInt(width)/2)){
@@ -99,7 +99,6 @@ project3.onmouseout = function(){
 project4.onmouseout = function(){
   project4.style.transform = "rotate(0) scale(1)";
   project4.style.boxShadow = "1px 1px 15px black";
-  log.console("ioasd");
 }
 window.onresize = function(){
   if(document.body.clientWidth > 650 && menuContainer.style.height > "0px"){
