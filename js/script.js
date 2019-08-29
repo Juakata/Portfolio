@@ -10,7 +10,7 @@ var project4 = document.getElementById("project-4");
 
 project1.ontouchmove = function() {
   var offset = $(this).offset();
-  x = event.pageX - offset.left;
+  x = project1.clientX;
   y = event.pageY;
   alert(x);
   width = window.getComputedStyle(project1).width;
