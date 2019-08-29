@@ -8,7 +8,22 @@ var project2 = document.getElementById("project-2");
 var project3 = document.getElementById("project-3");
 var project4 = document.getElementById("project-4");
 
-project1.onmousemove = function(name) {
+project1.ontouchmove = function() {
+  var offset = $(this).offset();
+  x = event.pageX - offset.left;
+  y = event.pageY;
+  width = window.getComputedStyle(project1).width;
+
+  if(x<(parseInt(width)/2)){
+    project1.style.transform = "perspective(1000px) rotateY(10deg) scale(1.1)";
+    project1.style.boxShadow = "0px 0px 15px black";
+  }else {
+    project1.style.transform = "perspective(1000px) rotateY(-10deg) scale(1.1)";
+    project1.style.boxShadow = "0px 0px 15px black";
+  }
+}
+
+project1.onmousemove = function() {
   var offset = $(this).offset();
   x = event.pageX - offset.left;
   y = event.pageY;
