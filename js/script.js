@@ -10,8 +10,8 @@ var project4 = document.getElementById("project-4");
 
 project1.ontouchmove = function() {
   var offset = $(this).offset();
-  x = event.pageX - offset.left;
-  y = event.pageY;
+  x = e.touches[0].clientX;
+  y = e.touches[0].clientY;
   width = window.getComputedStyle(project1).width;
 
   if(x<(parseInt(width)/2)){
@@ -21,6 +21,10 @@ project1.ontouchmove = function() {
     project1.style.transform = "perspective(1000px) rotateY(-10deg) scale(1.1)";
     project1.style.boxShadow = "0px 0px 15px black";
   }
+}
+project1.ontouchend = function(){
+  project1.style.transform = "rotate(0) scale(1)";
+  project1.style.boxShadow = "1px 1px 15px black";
 }
 
 project1.onmousemove = function() {
