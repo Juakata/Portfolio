@@ -3,4 +3,4 @@ The website contains all my work through the years here you can see all my stren
 
 Author: Andoni Uzquiano https://github.com/Juakata
 
-Follow this link to access to the website: https://raw.githack.com/Juakata/Portfolio/master/index.html
+Follow this link to access the website: https://raw.githack.com/Juakata/Portfolio/master/index.html
