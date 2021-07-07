@@ -8,7 +8,7 @@ var project2 = document.getElementById("project-2");
 var project3 = document.getElementById("project-3");
 var project4 = document.getElementById("project-4");
 
-project1.onmousemove = function(name) {
+project1.onmousemove = function() {
   var offset = $(this).offset();
   x = event.pageX - offset.left;
   y = event.pageY;
@@ -80,7 +80,6 @@ project3.onmouseout = function(){
 project4.onmouseout = function(){
   project4.style.transform = "rotate(0) scale(1)";
   project4.style.boxShadow = "1px 1px 15px black";
-  log.console("ioasd");
 }
 window.onresize = function(){
   if(document.body.clientWidth > 650 && menuContainer.style.height > "0px"){
